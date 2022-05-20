@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col col-sm-6">
+    <div class="alert alert-warning">
+      {{ date | date: "long":"GMT+1":"ar-AR" | uppercase }}
+    </div>
+    <div class="alert alert-primary">
+      Le nombre de cv sélectionné est : {{nb}}
+    </div>
+    <!--     (forwardCv)="getSelectedCv($event)"
+ -->
+    <app-list [cvs]="cvs"></app-list>
+  </div>
+  <div class="col col-sm-6">
+    <app-cv-card></app-cv-card>
+  </div>
+</div>
+<div class="row">
+  <app-embauche></app-embauche>
+</div>
